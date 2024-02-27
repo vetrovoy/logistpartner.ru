@@ -1,48 +1,38 @@
 .button {
+  display: inline-block;
+  font-family: Inter;
   cursor: pointer;
-  text-transform: uppercase;
-  padding: 12px 32px;
-  font-size: 12px;
-  font-style: normal;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
   font-weight: 700;
-  line-height: 140%;
-  letter-spacing: 1px;
+  line-height: 150%;
+  letter-spacing: 0%;
   text-align: center;
-  background-color: $color-white;
-  border: 1px solid $color-secondary;
-  color: $color-secondary;
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  border-radius: 6px;
+  border: 1px solid rgb(221, 59, 26);
+  padding: 13px 20px;
+  background: rgb(221, 59, 26);
+  text-decoration: none;
+  transition: background 0.3s ease, transform 0.3s ease;
+
+
+  @media (max-width: 1250px) {
+    padding: 10px 20px;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 16px;
+  }
 
   &:focus {
-    outline: none;
-    box-shadow: 0 0 1px $color-white;
+    background: rgb(201, 39, 6);
   }
 
   &:active {
-    transform: scale(0.99);
+    background: rgb(201, 39, 6);
   }
 
-  &--secondary {
-    background-color: $color-secondary;
-    border: 1px solid $color-secondary;
-    color: $color-white;
-  }
-
-  &--accent {
-    background-color: $color-accent;
-    border: 1px solid $color-accent;
-    color: $color-white;
-  }
-
-  &--white {
-    background-color: $color-white;
-    border: 1px solid $color-white;
-    color: $color-accent;
-  }
-
-  &--transparent {
-    background-color: transparent;
-    border: 1px solid $color-white;
-    color: $color-white;
+  &:hover {
+    background: rgb(201, 39, 6);
   }
 }

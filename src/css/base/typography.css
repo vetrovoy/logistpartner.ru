@@ -1,66 +1,96 @@
 body {
-  font-family: "Muller";
+  color: rgb(34, 34, 34);
+  font-family: 'Inter';
 }
 
-a {
-  text-decoration: none;
-  color: $color-primary;
-  transition: color 0.2s ease-in-out;
+h1,
+h2,
+h3,
+h4,
+h5,
+.title {
+  color: rgb(34, 34, 34);
+  display: block;
+  font-weight: 500;
+  line-height: 130%;
+  letter-spacing: 0%;
+  margin: 0 0 40px 0;
+}
+
+.title--2,
+.title--1,
+h1,
+h2 {
+  font-size: 38px;
+  font-weight: 700;
+
+  @media (max-width:768px) {
+    font-size: 24px;
+  }
+}
+
+.title--3,
+h3 {
+  font-size: 30px;
+
+  @media (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.title--4,
+h4 {
+  font-size: 24px;
+
+  @media (max-width:768px) {
+    font-size: 20px;
+  }
+}
+
+.title--5,
+h5 {
+  font-size: 20px;
+
+  @media (max-width:768px) {
+    font-size: 18px;
+  }
+}
+
+.paragraph,
+p {
+  color: rgb(34, 34, 34);
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+
+  @media (max-width:768px) {
+    font-size: 16px;
+  }
+}
+
+a,
+.link {
+  color: rgb(34, 34, 34);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: left;
+  text-decoration-line: underline;
 
   &:hover {
-    color: $color-secondary;
+    color: rgb(221, 59, 26);
   }
-}
-
-p {
-  color: #151515;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 25px;
-  margin-top: 0;
-  margin-bottom: 20px;
-}
-
-ul {
-  display: flex;
-  flex-direction: column;
-  gap: 18px;
-  padding-left: 1.3em;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-
-li {
-  color: #151515;
-  font-family: Muller;
-  font-size: 18px;
-  font-weight: 400;
-  line-height: 1;
-
-  &::marker {
-    color: $color-accent;
-    font-size: 1.3em;
+  &:active {
+    color: rgb(221, 59, 26);
   }
-}
-
-.title {
-  font-size: 46px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 120%;
-  margin-top: 0;
-  margin-bottom: 40px;
-
-  &--1 {
-    font-size: 52px;
+  &:focus {
+    color: rgb(221, 59, 26);
   }
 
-  &--2 {
-    font-size: 46px;
-  }
-
-  &--3 {
-    font-size: 40px;
+  @media (max-width:768px) {
+    font-size: 14px;
   }
 }

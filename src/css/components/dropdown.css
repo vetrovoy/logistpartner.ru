@@ -1,0 +1,16 @@
+.dropdown-toggle {
+  display: inline-flex;
+  align-items: center;
+
+  &::after {
+    display: inline-flex;
+    align-items: center;
+    background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="7.003418" height="3.001953" viewBox="0 0 7.00342 3.00195" fill="none"><desc>Created with Pixso.</desc><defs/><path id="Vector" d="M6.50171 0.501953L3.50171 2.50195L0.501709 0.501953" stroke="%23666666" stroke-opacity="1.000000" stroke-width="1.000000" stroke-linejoin="round" stroke-linecap="round"/></svg>');
+    border: none;
+    vertical-align: 0;
+    height: 3px;
+    width: 7px;
+    background-repeat: no-repeat;
+    margin-left: .555em;
+  }
+}

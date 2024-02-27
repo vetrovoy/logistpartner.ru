@@ -68,6 +68,10 @@ module.exports = {
           filename: "fonts/[name].[hash:6][ext]",
         },
       },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
+      },
     ],
   },
   optimization: {
