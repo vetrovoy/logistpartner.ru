@@ -23,4 +23,8 @@
 @import "layout/header.css";
 @import "layout/footer.css";
 @import "layout/hero.css";
+@import "layout/service.css";
+@import "layout/about.css";
+@import "layout/achievements.css";
+@import "layout/product.css";
 /* /Layout */

@@ -2,8 +2,8 @@
   display: inline-block;
   font-family: Inter;
   cursor: pointer;
-  color: rgb(255, 255, 255);
-  font-size: 18px;
+  color: $color-white;
+  font-size: 16px;
   font-weight: 700;
   line-height: 150%;
   letter-spacing: 0%;
@@ -15,13 +15,15 @@
   text-decoration: none;
   transition: background 0.3s ease, transform 0.3s ease;
 
-
   @media (max-width: 1250px) {
     padding: 10px 20px;
   }
 
-  @media (max-width: 768px) {
-    font-size: 16px;
+  &--lg {
+    font-size: 18px;
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
   }
 
   &:focus {

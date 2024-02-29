@@ -28,10 +28,3 @@ if (hamburgers.length > 0) {
     );
   });
 }
-
-document.addEventListener("DOMContentLoaded", () => {
-  const headerCollapse = document.getElementById("header-collapse");
-  if (window.innerWidth < 1250) {
-    headerCollapse.classList.remove("show");
-  }
-});

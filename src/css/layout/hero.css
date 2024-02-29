@@ -2,7 +2,7 @@
   display: flex;
   gap: 30px;
   border-radius: 20px;
-  background: rgb(248, 246, 247);
+  background: #F8F6F7;
 
   @media (max-width: 1250px) {
     flex-direction: column;
@@ -33,6 +33,7 @@
 
     @media (max-width: 768px) {
       margin-bottom: 20px;
+      text-align: center;
     }
   }
 
@@ -47,6 +48,7 @@
     @media (max-width: 768px) {
       font-size: 18px;
       margin-bottom: 20px;
+      text-align: center;
     }
   }
 }

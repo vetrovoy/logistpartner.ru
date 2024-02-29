@@ -1,0 +1,54 @@
+.about {
+  &__container {
+    display: flex;
+    gap: 30px;
+
+    @media (max-width: 1250px) {
+      flex-wrap: wrap;
+    }
+  }
+
+  &__text {
+    width: 58%;
+
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      & h2, & p {
+        text-align: center;
+      }
+    }
+  }
+
+  &__image {
+    width: 42%;
+    background-image: url('../images/about/logo.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+
+    @media (max-width: 768px) {
+      background-size: cover;
+    }
+
+    & img {
+      display: block;
+      max-width: 400px;
+      margin: 0 auto;
+
+      @media (max-width: 768px) {
+        max-width: 275px;
+      }
+    }
+  }
+
+  &__achievements {
+    margin-top: 30px;
+
+  }
+}

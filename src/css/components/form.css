@@ -1,6 +1,6 @@
 .form {
   border-radius: 10px;
-  background: rgb(50, 49, 45);
+  background: $color-bg;
   padding: 20px;
 
   @media (max-width: 768px) {
@@ -15,17 +15,21 @@
   font-weight: 400;
   line-height: 150%;
   padding: 14px;
-  background-color: rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
+  background-color: $color-white;
+  border: 1px solid $color-white;
   border-radius: 6px;
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
   &:focus {
     color: #212529;
-    background-color: #fff;
+    background-color: $color-white;
     border-color: rgb(221, 59, 26, 0.25);
     outline: 0;
-    box-shadow: 0 0 0 .15rem rgb(221, 59, 26, 0.25);
+    box-shadow: 0 0 0 0.15rem rgb(221, 59, 26, 0.25);
+  }
+
+  &::placeholder {
+    color: #999;
   }
 }
 
@@ -39,22 +43,34 @@
 }
 
 .form-text {
-  color: #fff;
+  color: $color-white;
   font-size: 12px;
 
   & a {
-    color: #fff;
+    color: $color-white;
     font-size: 12px;
   }
 }
 
 .form-calculator {
   text-align: center;
-  color: #fff;
+  color: $color-white;
+  height: 100%;
+  padding: 20px 26px;
+
+  @media (max-width: 1250px) {
+    text-align: left;
+    padding: 20px;
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 
   &__title {
-    color: #fff;
+    color: $color-white;
     margin-bottom: 20px;
+    font-weight: 700;
   }
 
   &__subtitle {
@@ -100,5 +116,9 @@
         flex-wrap: wrap;
       }
     }
+  }
+
+  & .form-text {
+    text-align: center;
   }
 }

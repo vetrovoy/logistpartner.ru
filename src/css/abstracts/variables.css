@@ -1,15 +1,13 @@
-/* :root {
-  --color-primary: #151515;
-  --color-secondary: #00b5e2;
-  --color-accent: #003c71;
-  --color-white: #ffffff;
-  --color-white-secondary: #F4F4F4;
+:root {
+  --color-primary: #222222;
+  --color-accent: #DD3B1A;
+  --color-accent-light: #FFEEEC;
+  --color-white: #FFFFFF;
+  --color-bg: #32312D;
 }
 
 $color-primary: var(--color-primary);
-$color-secondary: var(--color-secondary);
 $color-accent: var(--color-accent);
+$color-accent-light: var(--color-accent-light);
 $color-white: var(--color-white);
-$color-white-secondary: var(--color-white-secondary); */
-
-.variables {}
+$color-bg: var(--color-bg);

@@ -2,7 +2,11 @@ img {
   max-width: 100%;
 }
 
+input::placeholder {
+  color: #999;
+}
+
 main {
   padding-top: 10px;
-  background: #fff;
+  background: $color-white;
 }

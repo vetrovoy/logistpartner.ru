@@ -1,0 +1,46 @@
+.achievements {
+  display: flex;
+  gap: 30px;
+
+  @media (max-width: 1250px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+
+  & > * {
+    flex-basis: 220px;
+
+    @media (max-width: 768px) {
+      flex-basis: 160px;
+    }
+  }
+
+  &-item {
+    &__title {
+      color: $color-accent;
+      text-align: center;
+      font-size: 50px;
+      font-weight: 700;
+      line-height: 150%;
+
+      @media (max-width: 768px) {
+        font-size: 40px;
+      }
+    }
+
+    &__subtitle {
+      text-align: center;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: 150%;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+      }
+    }
+  }
+}

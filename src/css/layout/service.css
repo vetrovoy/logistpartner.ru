@@ -1,0 +1,205 @@
+.service {
+  padding: 40px;
+  border-radius: 20px;
+  background: $color-bg;
+
+  @media (max-width: 1250px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
+
+  &__title {
+    color: $color-white;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__collection {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 0;
+
+    & > * {
+      height: 356px;
+      background-position: right bottom;
+      background-repeat: no-repeat;
+
+      @media (max-width: 1250px) {
+        height: 290px;
+      }
+
+      @media (max-width: 768px) {
+        height: 326px;
+        background-size: contain;
+      }
+    }
+
+    & > *:nth-child(1) {
+      flex-basis: 658px;
+      background-image: url('../images/service/service-1.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: 100%;
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(2) {
+      flex-basis: 460px;
+      background-image: url('../images/service/service-2.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(3) {
+      flex-basis: 366px;
+      background-image: url('../images/service/service-3.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(4) {
+      flex-basis: 752px;
+      background-image: url('../images/service/service-4.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: 100%;
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(5) {
+      flex-basis: 398px;
+      background-image: url('../images/service/service-5.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(6) {
+      flex-basis: 350px;
+      background-image: url('../images/service/service-6.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+    }
+
+    & > *:nth-child(7) {
+      flex-basis: 350px;
+      background-image: url('../images/service/service-7.png');
+
+      @media (max-width: 1250px) {
+        flex-basis: calc(50% - 10px);
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+      }
+
+    }
+  }
+
+  &-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    padding: 26px;
+    background-color: $color-primary;
+
+    @media (max-width: 768px) {
+      align-items: center;
+    }
+
+    & .badge {
+      color: $color-white;
+      background: #383632;
+    }
+
+    &--white {
+      background-color: #FBFBFB;
+
+      & .service-item__title {
+        color: $color-primary;
+      }
+
+      & .service-item__subtitle {
+        color: $color-primary;
+      }
+
+      & .badge {
+        color: $color-accent;
+        background: #FFEEEC;
+      }
+    }
+
+    &__title {
+      color: $color-white;
+      margin-bottom: 10px;
+    }
+
+    &__subtitle {
+      color: $color-white;
+      font-size: 14px;
+      line-height: 150%;
+      margin-bottom: 14px;
+    }
+
+    &__button {
+      margin-top: auto;
+
+      @media (max-width: 768px) {
+        margin-top: 20px;
+      }
+
+    }
+
+  }
+}
+
+.badge {
+  border-radius: 30px;
+  background: #FFEEEC;
+  padding: 5px 10px;
+
+  color: $color-accent;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 150%;
+}
