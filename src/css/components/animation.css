@@ -1,0 +1,17 @@
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes bgRightSlideIn {
+  from {
+    background-position: 500px bottom;
+  }
+  to {
+    background-position: 100% bottom;
+  }
+}

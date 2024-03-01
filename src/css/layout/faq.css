@@ -1,0 +1,64 @@
+.faq {
+  &-item {
+    margin-bottom: 10px;
+
+    & button {
+      position: relative;
+      border-radius: 40px;
+      width: 100%;
+      color: #222;
+      font-family: Inter;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 500;
+      line-height: 150%;
+      background: linear-gradient(0deg, #f8f6f7 0%, #f8f6f7 100%), #ffeeec;
+      outline: none;
+      border: none;
+      padding: 16px 26px;
+      padding-right: 62px;
+      text-align: left;
+      cursor: pointer;
+
+      @media (max-width: 768px) {
+        font-size: 16px;
+        padding: 15px 20px;
+        padding-right: 46px;
+      }
+
+      &[aria-expanded="false"]::after {
+        opacity: 1;
+      }
+
+      &::after {
+        content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="44" height="44" viewBox="0 0 44 44" fill="none"><rect width="44" height="44" rx="22" fill="%23DD3B1A"/><path d="M14 22H30M22 30V22L22 14" stroke="white" stroke-width="2.5" stroke-linecap="round"/></svg>');
+        position: absolute;
+        right: 20px;
+        top: calc(50% - 23px);
+        opacity: 0.6;
+
+        @media (max-width: 768px) {
+          width: 30px;
+          height: 30px;
+        }
+      }
+    }
+  }
+
+  & .card {
+    background: none;
+    animation: fadein 1s;
+  }
+
+  & .card-body {
+    margin-top: 10px;
+    border-radius: 3.25rem;
+    border: none;
+
+    padding: 16px 26px;
+
+    @media (max-width: 768px) {
+      padding: 15px 20px;
+    }
+  }
+}

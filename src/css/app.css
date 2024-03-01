@@ -11,12 +11,18 @@
 /* /Base */
 
 /* Components */
+@import "components/swiper.css";
 @import "components/button.css";
 @import "components/form.css";
 @import "components/nav.css";
+@import "components/table.css";
 @import "components/dropdown.css";
 @import "components/hamburger.css";
 @import "components/containers.css";
+@import "components/card.css";
+
+
+@import "components/animation.css";
 /* /Components */
 
 /* Layout */
@@ -27,4 +33,15 @@
 @import "layout/about.css";
 @import "layout/achievements.css";
 @import "layout/product.css";
+@import "layout/price.css";
+@import "layout/fleet.css";
+@import "layout/advantages.css";
+@import "layout/faq.css";
+@import "layout/reviews.css";
+@import "layout/routes.css";
+
+/* * {
+  border: 1px solid rgb(201, 39, 6) !important;
+} */
+
 /* /Layout */

@@ -1,0 +1,33 @@
+.slider {
+  position: relative;
+}
+
+.swiper-slide {
+  animation: fadein 1s;
+}
+
+.swiper-button-prev {
+  @media (min-width: 1300px) {
+    left: var(--swiper-navigation-sides-offset, -50px);
+    right: auto;
+  }
+}
+
+.swiper-button-next {
+  @media (min-width: 1300px) {
+    right: var(--swiper-navigation-sides-offset, -50px);
+    left: auto;
+  }
+}
+
+.swiper-button-prev {
+  &::after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><g opacity="0.3"><rect x="34" y="34" width="34" height="34" rx="17" transform="rotate(-180 34 34)" fill="%23DD3B1A"/><path d="M19.542 24.084L12.4587 17.0007L19.542 9.91732" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+  }
+}
+
+.swiper-button-next {
+  &::after {
+    content: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none"><g opacity="0.3"><rect width="34" height="34" rx="17" fill="%23DD3B1A"/><path d="M14.458 9.91602L21.5413 16.9993L14.458 24.0827" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g></svg>');
+  }
+}

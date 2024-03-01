@@ -2,10 +2,25 @@
   gap: 24px;
 }
 
+.nav-item {
+  @media(max-width: 1250px) {
+    width: 100%;
+  }
+}
+
+
 .navbar-toggler {
   position: relative;
   padding: 0;
   border: none;
+  outline: none;
+
+  &:hover,
+  &:focus,
+  &:active {
+    outline: none;
+    box-shadow: none;
+  }
 }
 
 .nav-link {
@@ -20,10 +35,16 @@
   &:hover {
     color: rgb(221, 59, 26);
   }
+
   &:active {
     color: rgb(221, 59, 26);
   }
+
   &:focus {
     color: rgb(221, 59, 26);
+  }
+
+  @media (max-width: 1250px) {
+    width: 100%;
   }
 }

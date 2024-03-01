@@ -1,0 +1,92 @@
+.fleet {
+  background-color: $color-bg;
+  padding: 40px;
+  border-radius: 20px;
+
+  @media (max-width: 1250px) {
+    padding: 30px;
+  }
+
+  @media (max-width: 768px) {
+    padding: 30px 15px;
+  }
+
+  &__about {
+    margin-top: 30px;
+
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+    }
+  }
+
+  & .paragraph,
+  & .title,
+  & .advantages-item__desc {
+    color: $color-white;
+  }
+
+  & .paragraph {
+    display: block;
+    height: 100%;
+
+    & .title {
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      &:nth-child(1) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  &__title {
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
+  &__view {
+    @media (max-width: 1200px) {
+      margin-top: 20px;
+
+      & .col-12:nth-child(1) {
+        order: 99;
+      }
+    }
+  }
+
+  &__gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+
+    & > * {
+      border-radius: 10px;
+      object-fit: cover;
+    }
+
+    & > *:nth-child(1),
+    & > *:nth-child(2) {
+      flex-basis: calc(50% - 10px);
+      max-width: calc(50% - 10px);
+
+      @media (max-width: 1200px) {
+        height: 220px;
+      }
+
+      @media (max-width: 768px) {
+        flex-basis: 100%;
+        max-width: 100%;
+      }
+    }
+
+    & > *:nth-child(3) {
+      flex-basis: 100%;
+
+      @media (max-width: 1200px) {
+        height: 314px;
+      }
+    }
+  }
+}

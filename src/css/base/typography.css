@@ -57,6 +57,7 @@ h5 {
 }
 
 .paragraph,
+.card-body,
 p {
   color: $color-primary;
   font-size: 18px;
@@ -67,6 +68,16 @@ p {
 
   @media (max-width: 768px) {
     font-size: 16px;
+  }
+
+  &--highlight {
+    padding-left: 10px;
+    border-left: 2px solid $color-accent;
+
+    @media (max-width: 768px) {
+      border-left: none;
+      text-align: center;
+    }
   }
 }
 
@@ -91,6 +102,7 @@ a,
   &:active {
     color: rgb(221, 59, 26);
   }
+
   &:focus {
     color: rgb(221, 59, 26);
   }
@@ -98,4 +110,12 @@ a,
   @media (max-width: 768px) {
     font-size: 14px;
   }
+}
+
+small {
+  color: #222;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
 }

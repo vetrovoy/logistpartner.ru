@@ -11,6 +11,59 @@
     height: 3px;
     width: 7px;
     background-repeat: no-repeat;
-    margin-left: .555em;
+    margin-left: 0.555em;
+
+    @media (max-width: 1250px) {
+      margin-left: auto;
+      rotate: 270deg;
+    }
+  }
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+  text-decoration: none;
+  background-color: $color-accent;
+}
+
+.collapse-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+
+  border-radius: 0px 0px 10px 10px;
+  background: #fdfdfd;
+  box-shadow: 0px 10px 25px 0px rgba(15, 27, 3, 0.03);
+  padding: 20px;
+
+  & li {
+    list-style: none;
+    font-size: 14px;
+    font-weight: 400;
+  }
+}
+
+.collapse-custom {
+  position: absolute;
+  left: -20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-in-out;
+  margin: 0;
+  max-height: 0;
+  z-index: 100;
+  @media (max-width: 1250px) {
+    position: static;
+  }
+}
+
+.collapse-custom.show {
+  position: absolute;
+  left: -20px;
+  max-height: 284px;
+  overflow: viisible;
+
+  @media (max-width: 1250px) {
+    position: static;
   }
 }

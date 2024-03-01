@@ -43,10 +43,18 @@
   &-burger {
     height: 30px;
   }
+
+  &-nav {
+    @media (max-width: 1250px) {
+      width: 100%;
+    }
+  }
 }
 
 .header-collapse {
   @media (max-width: 1250px) {
+    max-height: calc(100vh - 75px);
+    overflow-y: scroll;
 
     & .header-container {
       align-items: flex-start;
@@ -103,5 +111,18 @@
     margin-left: 56px;
     justify-content: flex-end;
     gap: 27px;
+  }
+}
+
+.header-tablet__left {
+  @media (max-width: 768px) {
+    width: 100%;
+  }
+}
+
+.logo {
+  transition: 0.3 ease-in-out;
+  &:hover {
+    opacity: 0.6;
   }
 }

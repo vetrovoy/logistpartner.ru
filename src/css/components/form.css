@@ -1,10 +1,22 @@
 .form {
   border-radius: 10px;
-  background: $color-bg;
+  background-color: $color-bg;
   padding: 20px;
 
   @media (max-width: 768px) {
     padding: 20px 15px;
+  }
+
+  & .title--2 {
+    margin-bottom: 20px;
+  }
+
+  & *:not(input) {
+    color: $color-white;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 }
 
@@ -118,7 +130,47 @@
     }
   }
 
+  &--small {
+    & .form-calculator__container {
+      @media (max-width: 990px) {
+        flex-direction: column;
+      }
+    }
+
+    & .form-calculator__container .form-group {
+      @media (max-width: 1250px) {
+        max-width: calc(33% - 1px);
+      }
+
+      @media (max-width: 990px) {
+        max-width: 100%;
+      }
+    }
+  }
+
   & .form-text {
     text-align: center;
+  }
+}
+
+.form-end {
+  /* &__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  } */
+
+  & .form-group {
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+
+  & .button {
+    width: 100%;
+    margin-bottom: 10px;
   }
 }
