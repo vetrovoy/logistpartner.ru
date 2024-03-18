@@ -52,7 +52,13 @@
                 </a>
               </div>
               <div class="header-callback">
-                <button class="button">Заказать звонок</button>
+                <button
+                  class="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-callback"
+                >
+                  Заказать звонок
+                </button>
               </div>
               <div class="header-burger">
                 <button
@@ -184,7 +190,13 @@
                 >
               </div>
               <div class="header-callback">
-                <button class="button">Заказать звонок</button>
+                <button
+                  class="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-callback"
+                >
+                  Заказать звонок
+                </button>
               </div>
             </div>
           </div>
@@ -250,7 +262,7 @@
                       type="number"
                       name="weight"
                       class="form-control"
-                      placeholder="Вес груза"
+                      placeholder="Вес груза (в кг.)"
                     />
                   </div>
                   <div class="form-group">
@@ -480,7 +492,7 @@
             </div>
 
             <div class="products-collection">
-              <div class="row">
+              <div class="row g-0">
                 <div class="col-lg-3 col-6">
                   <div class="product-card">
                     <div class="product-card__image">
@@ -494,9 +506,13 @@
                       Грузовой микроавтобус. Вместителен для большинства
                       негабаритных грузов, либо домашних переездов.
                     </div>
-                    <a href="" class="product-card__button button button--lg"
-                      >Получить расчет</a
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
                     >
+                      Получить расчет
+                    </button>
                   </div>
                 </div>
                 <div class="col-lg-3 col-6">
@@ -512,9 +528,13 @@
                       Автомобиль отлично подходит для паллетных перевозок груза
                       небольших партий
                     </div>
-                    <a href="" class="product-card__button button button--lg"
-                      >Получить расчет</a
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
                     >
+                      Получить расчет
+                    </button>
                   </div>
                 </div>
                 <div class="col-lg-3 col-6">
@@ -530,9 +550,13 @@
                       Лучшее решение, когда Вам важна безопасность Вашего груза,
                       но не хватает объема до отдельной фуры
                     </div>
-                    <a href="" class="product-card__button button button--lg"
-                      >Получить расчет</a
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
                     >
+                      Получить расчет
+                    </button>
                   </div>
                 </div>
                 <div class="col-lg-3 col-6">
@@ -550,9 +574,13 @@
                       Классический автомобиль для перевозок габаритных или
                       объемных грузов. Вместимость до 33 европалет.
                     </div>
-                    <a href="" class="product-card__button button button--lg"
-                      >Получить расчет</a
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
                     >
+                      Получить расчет
+                    </button>
                   </div>
                 </div>
               </div>
@@ -644,17 +672,17 @@
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>2 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>3 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>4 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
@@ -667,7 +695,7 @@
                   <div class="tb-wrapper">
                     <div class="tb-wrapper__heading">
                       <div class="tb-wrapper__title title title--5">
-                        Перевозка Газелями
+                        Перевозка Фурами
                       </div>
 
                       <div class="tb-wrapper__link">
@@ -686,17 +714,17 @@
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>2 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>3 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
                       <tr>
-                        <td>1 тонна</td>
+                        <td>4 тонны</td>
                         <td>15,1 руб./км</td>
                         <td>40 000 руб.</td>
                       </tr>
@@ -816,7 +844,7 @@
       <!-- Часто задаваемые вопросы -->
       <section class="section">
         <div class="container">
-          <h2 class="title title-2">Часто задаваемые вопросы</h2>
+          <h2 class="faq-title title title-2">Часто задаваемые вопросы</h2>
 
           <div class="faq">
             <div class="faq-item">
@@ -900,7 +928,7 @@
       <div class="section">
         <div class="container">
           <div class="reviews">
-            <h2 class="title title--2">Отзывы клиентов</h2>
+            <h2 class="reviews__title title title--2">Отзывы клиентов</h2>
 
             <div class="reviews-slider slider">
               <div class="swiper">
@@ -1012,15 +1040,21 @@
                       <div class="badge">от 5 дней</div>
                       <div class="badge">от 500 кг</div>
                     </div>
-                    <a class="routes-item__button button">Получить расчет</a>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button"
+                    >
+                      Получить расчет
+                    </button>
 
                     <picture class="routes-item__bg">
                       <source
                         media="(max-width:768px)"
-                        srcset="./images/routes/m-ch--phone.svg"
+                        srcset="./images/routes/m-ch--phone.png"
                       />
                       <img
-                        src="./images/routes/m-ch.svg"
+                        src="./images/routes/m-ch.png"
                         alt="Москва - Чебоксары"
                       />
                     </picture>
@@ -1035,14 +1069,20 @@
                       <div class="badge">от 5 дней</div>
                       <div class="badge">от 500 кг</div>
                     </div>
-                    <a class="routes-item__button button">Получить расчет</a>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button"
+                    >
+                      Получить расчет
+                    </button>
                     <picture class="routes-item__bg">
                       <source
                         media="(max-width:768px)"
-                        srcset="./images/routes/ch-k--phone.svg"
+                        srcset="./images/routes/ch-k--phone.png"
                       />
                       <img
-                        src="./images/routes/ch-k.svg"
+                        src="./images/routes/ch-k.png"
                         alt="Москва - Казань"
                       />
                     </picture>
@@ -1057,14 +1097,20 @@
                       <div class="badge">от 5 дней</div>
                       <div class="badge">от 500 кг</div>
                     </div>
-                    <a class="routes-item__button button">Получить расчет</a>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button"
+                    >
+                      Получить расчет
+                    </button>
                     <picture class="routes-item__bg">
                       <source
                         media="(max-width:768px)"
-                        srcset="./images/routes/m-k--phone.svg"
+                        srcset="./images/routes/m-k--phone.png"
                       />
                       <img
-                        src="./images/routes/m-k.svg"
+                        src="./images/routes/m-k.png"
                         alt="Москва - Казань"
                       />
                     </picture>
@@ -1079,13 +1125,19 @@
                       <div class="badge">от 5 дней</div>
                       <div class="badge">от 500 кг</div>
                     </div>
-                    <a class="routes-item__button button">Получить расчет</a>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button"
+                    >
+                      Получить расчет
+                    </button>
                     <picture class="routes-item__bg">
                       <source
                         media="(max-width:768px)"
-                        srcset="./images/routes/m-kr--phone.svg"
+                        srcset="./images/routes/m-kr--phone.png"
                       />
-                      <img src="./images/routes/m-kr.svg" alt="Москва - Крым" />
+                      <img src="./images/routes/m-kr.png" alt="Москва - Крым" />
                     </picture>
                   </div>
                 </div>
@@ -1098,15 +1150,21 @@
                       <div class="badge">от 5 дней</div>
                       <div class="badge">от 500 кг</div>
                     </div>
-                    <a class="routes-item__button button">Получить расчет</a>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button"
+                    >
+                      Получить расчет
+                    </button>
 
                     <picture class="routes-item__bg">
                       <source
                         media="(max-width:768px)"
-                        srcset="./images/routes/m-s--phone.svg"
+                        srcset="./images/routes/m-s--phone.png"
                       />
                       <img
-                        src="./images/routes/m-s.svg"
+                        src="./images/routes/m-s.png"
                         alt="Москва- Санкт-Петербург"
                       />
                     </picture>
@@ -1122,7 +1180,10 @@
                       <a href="tel:+7(123)456-78-90">+7 (123) 456-78-90</a> или
                       оставьте заявку на сайте
                     </p>
-                    <a class="routes-item__button button button--white"
+                    <a
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="routes-item__button button button--white"
                       >Оставить заявку</a
                     >
                   </div>
@@ -1290,5 +1351,38 @@
         </div>
       </div>
     </footer>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="modal-callback"
+      tabindex="-1"
+      aria-labelledby="modal-callback-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-callback-label">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

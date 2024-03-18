@@ -31,7 +31,10 @@
       background-position: right bottom;
       background-repeat: no-repeat;
       transition: 0.6s ease-in-out;
-      animation: bgRightSlideIn 0.6s;
+
+      @media (min-width: 768px) {
+        animation: bgRightSlideIn 0.6s;
+      }
 
       &:hover {
         background-position: calc(100% + 20px) bottom;
@@ -43,7 +46,7 @@
 
       @media (max-width: 768px) {
         height: 326px;
-        background-size: contain;
+        background-size: 200px;
       }
     }
 
@@ -70,6 +73,7 @@
 
       @media (max-width: 768px) {
         flex-basis: 100%;
+        background-position: right bottom -16px;
       }
     }
 
@@ -83,6 +87,8 @@
 
       @media (max-width: 768px) {
         flex-basis: 100%;
+        background-position: right bottom -50px;
+        background-size: 250px;
       }
     }
 
@@ -109,6 +115,8 @@
 
       @media (max-width: 768px) {
         flex-basis: 100%;
+        background-size: 310px;
+        background-position: right bottom -45px;
       }
     }
 
@@ -122,6 +130,7 @@
 
       @media (max-width: 768px) {
         flex-basis: 100%;
+        background-size: 250px;
       }
     }
 
@@ -135,6 +144,7 @@
 
       @media (max-width: 768px) {
         flex-basis: 100%;
+        background-size: 310px;
       }
     }
   }
@@ -149,6 +159,7 @@
 
     @media (max-width: 768px) {
       align-items: center;
+      padding: 16px;
     }
 
     & .badge {
@@ -176,6 +187,11 @@
     &__title {
       color: $color-white;
       margin-bottom: 10px;
+      font-weight: 600;
+
+      @media (max-width: 768px) {
+        text-align: center;
+      }
     }
 
     &__subtitle {

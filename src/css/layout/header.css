@@ -53,8 +53,13 @@
 
 .header-collapse {
   @media (max-width: 1250px) {
+    position: absolute;
+    right: 0;
+    top: 72px;
     max-height: calc(100vh - 75px);
     overflow-y: scroll;
+    background-color: $color-white;
+    width: 50%;
 
     & .header-container {
       align-items: flex-start;
@@ -73,6 +78,10 @@
     & .nav {
       flex-direction: column;
     }
+  }
+
+  @media (max-width: 1250px) {
+    width: 100%;
   }
 }
 

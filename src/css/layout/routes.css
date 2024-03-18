@@ -35,6 +35,21 @@
     height: 300px;
     margin-bottom: 30px;
 
+    &:hover {
+      & .routes-item__bg {
+        opacity: 0.8;
+      }
+
+      & .routes-item__title {
+        opacity: 0.8;
+        color: $color-accent;
+      }
+    }
+
+    &__title {
+      font-weight: 600;
+    }
+
     &--accent {
       background-color: $color-accent;
 
@@ -53,6 +68,10 @@
           text-decoration: none;
           font-weight: 700;
           color: #fff;
+
+          &:hover {
+            opacity: 0.7;
+          }
         }
 
         @media (max-width: 1250px) {
@@ -98,6 +117,7 @@
       right: 0;
       top: 0;
       z-index: 1;
+      transition: opacity 0.3s;
 
       @media (max-width: 768px) {
         right: 0;

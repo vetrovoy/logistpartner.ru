@@ -25,6 +25,14 @@
     color: $color-white;
   }
 
+  & .advantages-item__desc {
+    margin-bottom: 30px;
+
+    @media (max-width: 990px) {
+      margin-bottom: 20px;
+    }
+  }
+
   & .paragraph {
     display: block;
     height: 100%;

@@ -13,6 +13,7 @@
 /* Components */
 @import "components/swiper.css";
 @import "components/button.css";
+@import "components/modal.css";
 @import "components/form.css";
 @import "components/nav.css";
 @import "components/table.css";

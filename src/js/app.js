@@ -3,12 +3,23 @@ import "../css/app.css";
 import "../js/hamburger.js";
 
 // HEADER COLLAPSE
+
 document.addEventListener("DOMContentLoaded", () => {
   const headerCollapse = document.getElementById("header-collapse");
+
   if (window.innerWidth <= 1250) {
     headerCollapse.classList.remove("show");
   }
+
+  window.addEventListener("resize", (ev) => {
+    if (ev.target.innerWidth <= 1250) {
+      headerCollapse.classList.remove("show");
+    } else {
+      headerCollapse.classList.add("show");
+    }
+  });
 });
+
 // CUSTOM COLLAPSE
 
 const collapseItems = document.querySelectorAll(

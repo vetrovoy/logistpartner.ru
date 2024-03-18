@@ -61,6 +61,10 @@
   & a {
     color: $color-white;
     font-size: 12px;
+
+    &:hover {
+      color: $color-accent;
+    }
   }
 }
 

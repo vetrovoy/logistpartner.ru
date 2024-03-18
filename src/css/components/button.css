@@ -1,4 +1,5 @@
-.button {
+.button,
+.btn {
   display: inline-block;
   font-family: Inter;
   cursor: pointer;
@@ -34,13 +35,25 @@
 
   &:focus {
     background: rgb(201, 39, 6);
+    border-color:rgb(221, 59, 26);
+    box-shadow: none;
   }
 
   &:active {
     background: rgb(201, 39, 6);
+    border-color:rgb(221, 59, 26);
+    box-shadow: none;
+  }
+
+  &:active:focus {
+    background: rgb(201, 39, 6);
+    border-color:rgb(221, 59, 26);
+    box-shadow: none;
   }
 
   &:hover {
     background: rgb(201, 39, 6);
+    border-color:rgb(221, 59, 26);
+    box-shadow: none;
   }
 }

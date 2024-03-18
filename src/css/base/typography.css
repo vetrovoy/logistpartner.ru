@@ -90,6 +90,7 @@ a,
   letter-spacing: 0%;
   text-align: left;
   text-decoration-line: underline;
+  transition: 0.2s ease-in-out;
 
   &:hover {
     color: rgb(221, 59, 26);
