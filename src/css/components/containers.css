@@ -6,6 +6,16 @@
   }
 }
 
+.main {
+  &--page {
+    padding-top: 30px;
+
+    @media (max-width: 1230px) {
+      padding-top: 20px;
+    }
+  }
+}
+
 .container {
   max-width: 1250px;
   margin-inline: auto;

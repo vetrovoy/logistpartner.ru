@@ -61,24 +61,6 @@
         }
       }
 
-      & > .paragraph {
-        width: 90%;
-
-        & a {
-          text-decoration: none;
-          font-weight: 700;
-          color: #fff;
-
-          &:hover {
-            opacity: 0.7;
-          }
-        }
-
-        @media (max-width: 1250px) {
-          width: 100%;
-        }
-      }
-
       & > .title,
       & > .paragraph {
         color: #fff;

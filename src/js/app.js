@@ -88,3 +88,17 @@ const reviewsSlider = new Swiper(".reviews-slider .swiper", {
     },
   },
 });
+
+const bandsSlider = new Swiper(".brands-slider .swiper", {
+  rewind: true,
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  grabCursor: true,
+  breakpoints: {
+    1230: {
+      slidesPerView: 7,
+    },
+  },
+});
+
+console.log(bandsSlider);

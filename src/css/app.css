@@ -40,6 +40,8 @@
 @import "layout/faq.css";
 @import "layout/reviews.css";
 @import "layout/routes.css";
+@import "layout/brands.css";
+@import "layout/team.css";
 
 /* * {
   border: 1px solid rgb(201, 39, 6) !important;

@@ -75,7 +75,7 @@
   line-height: 150%;
   border-bottom-width: 0;
 
-  @media (max-width: 769px) {
+  @media (max-width: 768px) {
     display: flex;
     align-items: center;
     font-size: 12px;

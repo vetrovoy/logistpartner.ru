@@ -14,7 +14,7 @@
   padding: 13px 20px;
   background: rgb(221, 59, 26);
   text-decoration: none;
-  transition: background 0.3s ease, transform 0.3s ease-in-out;
+  transition: 0.3s ease, transform 0.3s ease-in-out;
 
   @media (max-width: 1250px) {
     padding: 10px 20px;
@@ -27,33 +27,61 @@
     }
   }
 
-  &--white {
-    color: $color-primary;
-    background-color: $color-white;
-    border: 1px solid $color-white;
-  }
-
   &:focus {
     background: rgb(201, 39, 6);
-    border-color:rgb(221, 59, 26);
+    border-color: rgb(221, 59, 26);
     box-shadow: none;
   }
 
   &:active {
     background: rgb(201, 39, 6);
-    border-color:rgb(221, 59, 26);
+    border-color: rgb(221, 59, 26);
     box-shadow: none;
   }
 
   &:active:focus {
     background: rgb(201, 39, 6);
-    border-color:rgb(221, 59, 26);
+    border-color: rgb(221, 59, 26);
     box-shadow: none;
   }
 
   &:hover {
     background: rgb(201, 39, 6);
-    border-color:rgb(221, 59, 26);
+    border-color: rgb(221, 59, 26);
     box-shadow: none;
+  }
+
+  &--white {
+    color: $color-primary;
+    background-color: $color-white;
+    border: 1px solid $color-white;
+
+    &:focus {
+      color: $color-accent;
+      background-color: $color-white;
+      border-color: $color-white;
+      box-shadow: none;
+    }
+
+    &:active {
+      color: $color-accent;
+      background-color: $color-white;
+      border-color: $color-white;
+      box-shadow: none;
+    }
+
+    &:active:focus {
+      color: $color-accent;
+      background-color: $color-white;
+      border-color: $color-white;
+      box-shadow: none;
+    }
+
+    &:hover {
+      color: $color-accent;
+      background-color: $color-white;
+      border-color: $color-white;
+      box-shadow: none;
+    }
   }
 }

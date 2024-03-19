@@ -1,0 +1,14 @@
+.brands {
+  &-slider {
+    padding: 10px 0;
+
+    & .swiper-slide {
+      width: 156.9px;
+    }
+
+    & img {
+      object-fit: cover;
+      height: 110px;
+    }
+  }
+}

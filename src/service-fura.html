@@ -1,0 +1,1403 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Шапка -->
+    <header class="header">
+      <div class="header-tablet">
+        <div class="container">
+          <div class="header-container">
+            <div class="header-tablet__left">
+              <div class="header-logo logo">
+                <a href="/">
+                  <img src="./images/logo.svg" alt="Логистический Центр" />
+                </a>
+              </div>
+            </div>
+            <div class="header-tablet__right">
+              <div class="header-contacts">
+                <a class="header-contacts__tel" href="tel:+7(123)456-78-90"
+                  >+7 (123) 456-78-90</a
+                >
+                <a class="header-contacts__mail" href="mailto:mail@mail.ru"
+                  >mail@mail.ru</a
+                >
+                <a class="header-contacts__phone" href="tel:+7(123)456-78-90">
+                  <span class="icon">
+                    <img
+                      src="./images/icons/phone.svg"
+                      alt="+7(123)456-78-90"
+                    />
+                  </span>
+                </a>
+              </div>
+              <div class="header-callback">
+                <button
+                  class="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-callback"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+              <div class="header-burger">
+                <button
+                  class="navbar-toggler"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#header-collapse"
+                  aria-controls="header-collapse"
+                  aria-expanded="true"
+                  aria-label="Переключить навигацию"
+                >
+                  <div class="hamburger hamburger--spring">
+                    <div class="hamburger-box">
+                      <div class="hamburger-inner"></div>
+                    </div>
+                  </div>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="header-collapse">
+        <div class="container">
+          <div class="collapse show navbar-collapse" id="header-collapse">
+            <div class="header-container">
+              <div class="header-logo logo">
+                <a href="/">
+                  <img src="./images/logo.svg" alt="Логистический Центр" />
+                </a>
+              </div>
+              <div class="header-nav">
+                <nav class="nav">
+                  <li
+                    class="nav-item dropdown"
+                    data-collapse-custom-target="c-1"
+                  >
+                    <a href="" class="nav-link dropdown-toggle"> Предметы </a>
+                    <div class="collapse-custom" id="c-1">
+                      <ul class="collapse-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li
+                    class="nav-item dropdown"
+                    data-collapse-custom-target="c-2"
+                  >
+                    <a href="" class="nav-link dropdown-toggle"> Предметы </a>
+                    <div class="collapse-custom" id="c-2">
+                      <ul class="collapse-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li
+                    class="nav-item dropdown"
+                    data-collapse-custom-target="c-3"
+                  >
+                    <a href="/" class="nav-link dropdown-toggle"> Предметы </a>
+                    <div class="collapse-custom" id="c-3">
+                      <ul class="collapse-menu">
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#"
+                            >Москва - Чебоксары</a
+                          >
+                        </li>
+                      </ul>
+                    </div>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">О компании</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Отзывы</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Контакты</a>
+                  </li>
+                </nav>
+              </div>
+              <div class="header-contacts">
+                <a class="header-contacts__tel" href="tel:+7(123)456-78-90"
+                  >+7 (123) 456-78-90</a
+                >
+                <a class="header-contacts__mail" href="mailto:mail@mail.ru"
+                  >mail@mail.ru</a
+                >
+              </div>
+              <div class="header-callback">
+                <button
+                  class="button"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-callback"
+                >
+                  Заказать звонок
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- /Шапка -->
+
+    <main class="main main--page main--service">
+      <!-- Перевозка грузов фурами -->
+      <section class="section">
+        <div class="service-heading">
+          <div class="container">
+            <ul class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a href="">Главная</a>
+              </li>
+              <li class="breadcrumbs-item">
+                <span>Перевозка грузов фурами</span>
+              </li>
+            </ul>
+          </div>
+
+          <div class="container">
+            <div class="row">
+              <div class="col-xl-7">
+                <h2 class="service-heading__title title title--2">
+                  Перевозка грузов фурами
+                </h2>
+
+                <p class="service-heading__subtitle">
+                  Испытываете срочную необходимость доставки груза из Москвы в
+                  Казань? Транспортная компания «Логистический центр» предлагает
+                  транспортировку любых категорий негабаритных и тяжеловесных
+                  грузов по всей территории России.
+                </p>
+
+                <button
+                  class="service-heading__button button button--lg"
+                  data-bs-toggle="modal"
+                  data-bs-target="#modal-callback"
+                >
+                  Заказать перевозку
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="service-heading-bg">
+            <img
+              src="./images/service/bg-service-fura.png"
+              alt="Перевозка грузов Москва-Казань"
+            />
+          </div>
+
+          <div class="container">
+            <div class="service-advantages">
+              <div class="row">
+                <div class="col-md-4">
+                  <div class="service-advantages-item">
+                    <div class="service-advantages-item__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.7334 4.35198L23.3051 9.59673C23.5233 10.0383 23.8457 10.4202 24.2443 10.7094C24.6429 10.9987 25.1059 11.1867 25.5934 11.2572L31.3646 12.0875C31.9259 12.169 32.4532 12.406 32.8867 12.7717C33.3202 13.1374 33.6427 13.6171 33.8176 14.1566C33.9925 14.6962 34.0129 15.2739 33.8764 15.8244C33.7399 16.3749 33.4521 16.8762 33.0454 17.2715L28.8739 21.3215C28.51 21.6711 28.2397 22.1064 28.0876 22.5875C27.9354 23.0686 27.9064 23.5802 28.0031 24.0755L28.9751 29.8265C29.0687 30.3832 29.0052 30.9549 28.7919 31.4775C28.5786 32.0001 28.2239 32.453 27.7675 32.7852C27.3112 33.1175 26.7713 33.316 26.2084 33.3586C25.6456 33.4011 25.082 33.2859 24.5809 33.026L19.4171 30.272C18.9797 30.0431 18.4933 29.9236 17.9996 29.9236C17.5059 29.9236 17.0196 30.0431 16.5821 30.272L11.4184 32.9855C10.9173 33.2454 10.3537 33.3606 9.79086 33.3181C9.22798 33.2755 8.68809 33.077 8.23175 32.7447C7.77542 32.4125 7.4207 31.9596 7.20739 31.437C6.99409 30.9144 6.93063 30.3427 7.02414 29.786L7.99614 24.0755C8.08231 23.5896 8.04799 23.09 7.89618 22.6204C7.74437 22.1509 7.47971 21.7257 7.12539 21.3822L2.95389 17.3322C2.52894 16.9397 2.22493 16.4339 2.07763 15.8744C1.93034 15.3149 1.94588 14.725 2.12244 14.1741C2.299 13.6232 2.62922 13.1341 3.07426 12.7644C3.51931 12.3948 4.06066 12.1599 4.63464 12.0875L10.4059 11.2572C10.8934 11.1867 11.3564 10.9987 11.755 10.7094C12.1536 10.4202 12.4759 10.0383 12.6941 9.59673L15.2659 4.35198C15.5201 3.84469 15.9104 3.41814 16.3932 3.12004C16.876 2.82194 17.4322 2.66406 17.9996 2.66406C18.5671 2.66406 19.1233 2.82194 19.6061 3.12004C20.0889 3.41814 20.4792 3.84469 20.7334 4.35198Z"
+                          stroke="#DD3B1A"
+                          stroke-width="3"
+                          stroke-miterlimit="10"
+                        />
+                      </svg>
+                    </div>
+                    <div class="service-advantages-item__title title title--5">
+                      Надёжные перевозчики
+                    </div>
+                    <div class="service-advantages-item__subtitle">
+                      Деловые отношения, которые помогут развиваться Вашему
+                      бизнесу
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-advantages-item">
+                    <div class="service-advantages-item__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.7334 4.35198L23.3051 9.59673C23.5233 10.0383 23.8457 10.4202 24.2443 10.7094C24.6429 10.9987 25.1059 11.1867 25.5934 11.2572L31.3646 12.0875C31.9259 12.169 32.4532 12.406 32.8867 12.7717C33.3202 13.1374 33.6427 13.6171 33.8176 14.1566C33.9925 14.6962 34.0129 15.2739 33.8764 15.8244C33.7399 16.3749 33.4521 16.8762 33.0454 17.2715L28.8739 21.3215C28.51 21.6711 28.2397 22.1064 28.0876 22.5875C27.9354 23.0686 27.9064 23.5802 28.0031 24.0755L28.9751 29.8265C29.0687 30.3832 29.0052 30.9549 28.7919 31.4775C28.5786 32.0001 28.2239 32.453 27.7675 32.7852C27.3112 33.1175 26.7713 33.316 26.2084 33.3586C25.6456 33.4011 25.082 33.2859 24.5809 33.026L19.4171 30.272C18.9797 30.0431 18.4933 29.9236 17.9996 29.9236C17.5059 29.9236 17.0196 30.0431 16.5821 30.272L11.4184 32.9855C10.9173 33.2454 10.3537 33.3606 9.79086 33.3181C9.22798 33.2755 8.68809 33.077 8.23175 32.7447C7.77542 32.4125 7.4207 31.9596 7.20739 31.437C6.99409 30.9144 6.93063 30.3427 7.02414 29.786L7.99614 24.0755C8.08231 23.5896 8.04799 23.09 7.89618 22.6204C7.74437 22.1509 7.47971 21.7257 7.12539 21.3822L2.95389 17.3322C2.52894 16.9397 2.22493 16.4339 2.07763 15.8744C1.93034 15.3149 1.94588 14.725 2.12244 14.1741C2.299 13.6232 2.62922 13.1341 3.07426 12.7644C3.51931 12.3948 4.06066 12.1599 4.63464 12.0875L10.4059 11.2572C10.8934 11.1867 11.3564 10.9987 11.755 10.7094C12.1536 10.4202 12.4759 10.0383 12.6941 9.59673L15.2659 4.35198C15.5201 3.84469 15.9104 3.41814 16.3932 3.12004C16.876 2.82194 17.4322 2.66406 17.9996 2.66406C18.5671 2.66406 19.1233 2.82194 19.6061 3.12004C20.0889 3.41814 20.4792 3.84469 20.7334 4.35198Z"
+                          stroke="#DD3B1A"
+                          stroke-width="3"
+                          stroke-miterlimit="10"
+                        />
+                      </svg>
+                    </div>
+                    <div class="service-advantages-item__title title title--5">
+                      Страхование
+                    </div>
+                    <div class="service-advantages-item__subtitle">
+                      Мы сотрудничаем с надежной страховой компанией Спасские
+                      Ворота
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <div class="service-advantages-item">
+                    <div class="service-advantages-item__icon">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="36"
+                        height="36"
+                        viewBox="0 0 36 36"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.7334 4.35198L23.3051 9.59673C23.5233 10.0383 23.8457 10.4202 24.2443 10.7094C24.6429 10.9987 25.1059 11.1867 25.5934 11.2572L31.3646 12.0875C31.9259 12.169 32.4532 12.406 32.8867 12.7717C33.3202 13.1374 33.6427 13.6171 33.8176 14.1566C33.9925 14.6962 34.0129 15.2739 33.8764 15.8244C33.7399 16.3749 33.4521 16.8762 33.0454 17.2715L28.8739 21.3215C28.51 21.6711 28.2397 22.1064 28.0876 22.5875C27.9354 23.0686 27.9064 23.5802 28.0031 24.0755L28.9751 29.8265C29.0687 30.3832 29.0052 30.9549 28.7919 31.4775C28.5786 32.0001 28.2239 32.453 27.7675 32.7852C27.3112 33.1175 26.7713 33.316 26.2084 33.3586C25.6456 33.4011 25.082 33.2859 24.5809 33.026L19.4171 30.272C18.9797 30.0431 18.4933 29.9236 17.9996 29.9236C17.5059 29.9236 17.0196 30.0431 16.5821 30.272L11.4184 32.9855C10.9173 33.2454 10.3537 33.3606 9.79086 33.3181C9.22798 33.2755 8.68809 33.077 8.23175 32.7447C7.77542 32.4125 7.4207 31.9596 7.20739 31.437C6.99409 30.9144 6.93063 30.3427 7.02414 29.786L7.99614 24.0755C8.08231 23.5896 8.04799 23.09 7.89618 22.6204C7.74437 22.1509 7.47971 21.7257 7.12539 21.3822L2.95389 17.3322C2.52894 16.9397 2.22493 16.4339 2.07763 15.8744C1.93034 15.3149 1.94588 14.725 2.12244 14.1741C2.299 13.6232 2.62922 13.1341 3.07426 12.7644C3.51931 12.3948 4.06066 12.1599 4.63464 12.0875L10.4059 11.2572C10.8934 11.1867 11.3564 10.9987 11.755 10.7094C12.1536 10.4202 12.4759 10.0383 12.6941 9.59673L15.2659 4.35198C15.5201 3.84469 15.9104 3.41814 16.3932 3.12004C16.876 2.82194 17.4322 2.66406 17.9996 2.66406C18.5671 2.66406 19.1233 2.82194 19.6061 3.12004C20.0889 3.41814 20.4792 3.84469 20.7334 4.35198Z"
+                          stroke="#DD3B1A"
+                          stroke-width="3"
+                          stroke-miterlimit="10"
+                        />
+                      </svg>
+                    </div>
+                    <div class="service-advantages-item__title title title--5">
+                      Гарантированные сроки
+                    </div>
+                    <div class="service-advantages-item__subtitle">
+                      Вы и Ваши клиенты могут быть уверены за сроки доставки
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Перевозка грузов фурами -->
+
+      <!-- Детальный текст-->
+      <section class="section">
+        <div class="container">
+          <div class="service-text">
+            <div class="detail-text">
+              <h2>Заголовок для SEO</h2>
+              <p>
+                Но независимые государства будут в равной степени предоставлены
+                сами себе. В своём стремлении повысить качество жизни, они
+                забывают, что понимание сути ресурсосберегающих технологий
+                обеспечивает широкому кругу (специалистов) участие в
+                формировании приоретизации разума над эмоциями. Не следует,
+                однако, забывать, что современная методология разработки
+                предоставляет широкие возможности для форм воздействия.
+              </p>
+              <p>
+                Равным образом, высокое качество позиционных исследований, а
+                также свежий взгляд на привычные вещи — безусловно открывает
+                новые горизонты для системы обучения кадров, соответствующей
+                насущным потребностям. Для современного мира консультация с
+                широким активом представляет собой интересный эксперимент
+                проверки глубокомысленных рассуждений. Наше дело не так
+                однозначно, как может показаться: социально-экономическое
+                развитие создаёт необходимость включения в производственный план
+                целого ряда внеочередных мероприятий с учётом комплекса вывода
+                текущих активов.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Детальный текст-->
+
+      <!-- Форма -->
+      <section class="section">
+        <div class="container">
+          <div class="form form-row form--accent">
+            <div class="form-row__item">
+              <div class="title title--3 form-row__title">
+                Заголовок в две строки
+              </div>
+            </div>
+            <div class="form-row__item">
+              <p class="paragraph">
+                Свяжитесь с нами
+                <a href="tel:+7(123)456-78-90">+7 (123) 456-78-90</a> или
+                оставьте заявку на сайте
+              </p>
+            </div>
+            <div class="form-row__item">
+              <button
+                data-bs-toggle="modal"
+                data-bs-target="#modal-callback"
+                class="button button--lg button--white"
+              >
+                Оставить заявку
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Форма -->
+
+      <!-- Цены -->
+      <section class="section">
+        <div class="container">
+          <div class="price">
+            <h2 class="price__title title title--2">
+              Цены на грузоперевозку из Москвы в Казань
+            </h2>
+            <div class="row">
+              <div class="col-12">
+                <div class="price__map">
+                  <div style="position: relative; overflow: hidden">
+                    <iframe
+                      src="https://yandex.ru/map-widget/v1/?ll=47.491172%2C56.124391&mode=search&ol=geo&ouri=ymapsbm1%3A%2F%2Fgeo%3Fdata%3DCgg1NjAxMTA4ORJ40KDQvtGB0YHQuNGPLCDQp9GD0LLQsNGI0YHQutCw0Y8g0KDQtdGB0L_Rg9Cx0LvQuNC60LAsINCd0L7QstC-0YfQtdCx0L7QutGB0LDRgNGB0LosINGD0LvQuNGG0LAg0JLQuNC90L7QutGD0YDQvtCy0LAsIDEwIgoN9vY9QhVgf2BC&z=17.17"
+                      width="100%"
+                      height="516"
+                      frameborder="1"
+                      allowfullscreen="true"
+                      style="position: relative"
+                    ></iframe>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 col-xl-6">
+                <div class="price__table">
+                  <div class="tb-wrapper">
+                    <div class="tb-wrapper__heading">
+                      <div class="tb-wrapper__title title title--5">
+                        Перевозка Газелями
+                      </div>
+
+                      <div class="tb-wrapper__link">
+                        <a href="">Подробнее</a>
+                      </div>
+                    </div>
+                    <table class="table">
+                      <tr>
+                        <th>Вес</th>
+                        <th>Стоимость км</th>
+                        <th>Общая стоимость</th>
+                      </tr>
+                      <tr>
+                        <td>1 тонна</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>2 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>3 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>4 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-xl-6">
+                <div class="price__table">
+                  <div class="tb-wrapper">
+                    <div class="tb-wrapper__heading">
+                      <div class="tb-wrapper__title title title--5">
+                        Перевозка Фурами
+                      </div>
+
+                      <div class="tb-wrapper__link">
+                        <a href="">Подробнее</a>
+                      </div>
+                    </div>
+                    <table class="table">
+                      <tr>
+                        <th>Вес</th>
+                        <th>Стоимость км</th>
+                        <th>Общая стоимость</th>
+                      </tr>
+                      <tr>
+                        <td>1 тонна</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>2 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>3 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                      <tr>
+                        <td>4 тонны</td>
+                        <td>15,1 руб./км</td>
+                        <td>40 000 руб.</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button class="tb-wrapper__button button button--lg">
+                  Зафиксировать стоимость
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Цены -->
+
+      <!-- Наша техника  -->
+      <section class="section">
+        <div class="container">
+          <div class="products">
+            <h2 class="products__title title title--2">Наша техника</h2>
+            <div class="products__subtitle title title--4">
+              Готовы предоставить отдельный автомобиль специально под Ваш груз
+            </div>
+
+            <div class="products-collection">
+              <div class="row g-0">
+                <div class="col-lg-3 col-6">
+                  <div class="product-card">
+                    <div class="product-card__image">
+                      <img
+                        src="./images/product/product.png"
+                        alt="До 3 тонн и 14 м.куб."
+                      />
+                    </div>
+                    <div class="product-card__name">До 3 тонн и 14 м.куб.</div>
+                    <div class="product-card__desc">
+                      Грузовой микроавтобус. Вместителен для большинства
+                      негабаритных грузов, либо домашних переездов.
+                    </div>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
+                    >
+                      Получить расчет
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="product-card">
+                    <div class="product-card__image">
+                      <img
+                        src="./images/product/product-2.png"
+                        alt="До 5 тонн и 25 м.куб."
+                      />
+                    </div>
+                    <div class="product-card__name">До 5 тонн и 25 м.куб.</div>
+                    <div class="product-card__desc">
+                      Автомобиль отлично подходит для паллетных перевозок груза
+                      небольших партий
+                    </div>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
+                    >
+                      Получить расчет
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="product-card">
+                    <div class="product-card__image">
+                      <img
+                        src="./images/product/product-3.png"
+                        alt="До 10 тонн и 30 м.куб.."
+                      />
+                    </div>
+                    <div class="product-card__name">До 10 тонн и 30 м.куб.</div>
+                    <div class="product-card__desc">
+                      Лучшее решение, когда Вам важна безопасность Вашего груза,
+                      но не хватает объема до отдельной фуры
+                    </div>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
+                    >
+                      Получить расчет
+                    </button>
+                  </div>
+                </div>
+                <div class="col-lg-3 col-6">
+                  <div class="product-card">
+                    <div class="product-card__image">
+                      <img
+                        src="./images/product/product-4.png"
+                        alt="До 20 тонн и 120 м.куб.."
+                      />
+                    </div>
+                    <div class="product-card__name">
+                      До 20 тонн и 120 м.куб.
+                    </div>
+                    <div class="product-card__desc">
+                      Классический автомобиль для перевозок габаритных или
+                      объемных грузов. Вместимость до 33 европалет.
+                    </div>
+                    <button
+                      data-bs-toggle="modal"
+                      data-bs-target="#modal-callback"
+                      class="product-card__button button button--lg"
+                    >
+                      Получить расчет
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Наша техника -->
+
+      <!-- Нам доверяют -->
+      <section class="section">
+        <div class="container">
+          <div class="brands">
+            <h2 class="brands__title title title--2">Нам доверяют</h2>
+
+            <div class="brands-slider slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                      src="https://via.assets.so/img.jpg?w=400&h=130&tc=#DD3B1A&bg=#F8F6F7
+                    "
+                      alt="Brand alt"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Нам доверяют -->
+
+      <!-- Часто задаваемые вопросы -->
+      <section class="section">
+        <div class="container">
+          <h2 class="faq-title title title-2">Часто задаваемые вопросы</h2>
+
+          <div class="faq">
+            <div class="faq-item">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-faq-1"
+                aria-expanded="false"
+                aria-controls="collapse-faq-1"
+              >
+                Сколько времени занимает оформление документов?
+              </button>
+              <div class="collapse" id="collapse-faq-1">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This
+                  panel is hidden by default but revealed when the user
+                  activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-faq-2"
+                aria-expanded="false"
+                aria-controls="collapse-faq-2"
+              >
+                Сколько времени занимает оформление документов?
+              </button>
+              <div class="collapse" id="collapse-faq-2">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This
+                  panel is hidden by default but revealed when the user
+                  activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-faq-3"
+                aria-expanded="false"
+                aria-controls="collapse-faq-3"
+              >
+                Сколько времени занимает оформление документов?
+              </button>
+              <div class="collapse" id="collapse-faq-3">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This
+                  panel is hidden by default but revealed when the user
+                  activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#collapse-faq-4"
+                aria-expanded="false"
+                aria-controls="collapse-faq-4"
+              >
+                Сколько времени занимает оформление документов?
+              </button>
+              <div class="collapse" id="collapse-faq-4">
+                <div class="card card-body">
+                  Some placeholder content for the collapse component. This
+                  panel is hidden by default but revealed when the user
+                  activates the relevant trigger.
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Часто задаваемые вопросы -->
+
+      <!-- Типы перевозок -->
+      <section class="section">
+        <div class="container container--ph-full">
+          <div class="service">
+            <div class="title title--2 service__title">
+              Другие способы перевозки
+            </div>
+            <div class="service__collection">
+              <div class="service-item service-item--white">
+                <div class="service-item__title title title--4">
+                  Перевозка фурами
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item">
+                <div class="service-item__title title title--4">
+                  Перевозка газелями
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item service-item--white">
+                <div class="service-item__title title title--4">
+                  Коники/перевозка труб, леса
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item">
+                <div class="service-item__title title title--4">
+                  Малотоннажные перевозки
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item">
+                <div class="service-item__title title title--4">
+                  Негабаритная перевозка
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item service-item--white">
+                <div class="service-item__title title title--4">
+                  ЖД перевозки
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+
+              <div class="service-item">
+                <div class="service-item__title title title--4">
+                  Перевозка опасных грузов
+                </div>
+                <div class="service-item__subtitle">
+                  когда груз нужен здесь и сейчас
+                </div>
+                <div class="service-item__badges">
+                  <div class="badge">от 5 дней</div>
+                  <div class="badge">от 500 кг</div>
+                </div>
+                <a href="#" class="service-item__button button button--lg"
+                  >Узнать подробнее</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Типы перевозок -->
+
+      <!-- Отзывы клиентов -->
+      <div class="section">
+        <div class="container">
+          <div class="reviews">
+            <h2 class="reviews__title title title--2">Отзывы клиентов</h2>
+
+            <div class="reviews-slider slider">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="review-item">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title">Иванова Анна</div>
+                          <div class="card-subtitle">ООО “Наш клиент”</div>
+                          <p class="card-text">
+                            Отлично! Рекомменд однозначно! Пользовались услугами
+                            данной компании 2 раза, и оба раза очень удачно: все
+                            вовремя, ребята вежливые, ответственные, все делают
+                            очень оперативно и добротно.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-item">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title">Иванова Анна</div>
+                          <div class="card-subtitle">ООО “Наш клиент”</div>
+                          <p class="card-text">
+                            Отлично! Рекомменд однозначно! Пользовались услугами
+                            данной компании 2 раза, и оба раза очень удачно: все
+                            вовремя, ребята вежливые, ответственные, все делают
+                            очень оперативно и добротно.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-item">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title">Иванова Анна</div>
+                          <div class="card-subtitle">ООО “Наш клиент”</div>
+                          <p class="card-text">
+                            Отлично! Рекомменд однозначно! Пользовались услугами
+                            данной компании 2 раза, и оба раза очень удачно: все
+                            вовремя, ребята вежливые, ответственные, все делают
+                            очень оперативно и добротно.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="review-item">
+                      <div class="card">
+                        <div class="card-body">
+                          <div class="card-title">Иванова Анна</div>
+                          <div class="card-subtitle">ООО “Наш клиент”</div>
+                          <p class="card-text">
+                            Отлично! Рекомменд однозначно! Пользовались услугами
+                            данной компании 2 раза, и оба раза очень удачно: все
+                            вовремя, ребята вежливые, ответственные, все делают
+                            очень оперативно и добротно.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next"></div>
+            </div>
+
+            <a href="" class="reviews__button button">
+              Посмотреть все отзывы
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- /Отзывы клиентов -->
+
+      <!-- Популярные направления из Москвы -->
+      <section class="section">
+        <div class="container">
+          <div class="directions">
+            <h2 class="title title--2">Популярные направления из Москвы</h2>
+
+            <div class="row">
+              <div class="col-xl-4 col-md-6">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4 col-md-6 mt-2 mt-md-0">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4 col-md-6 mt-2 mt-xl-0">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Популярные направления из Москвы -->
+
+      <!-- Популярные направления в Казань -->
+      <section class="section">
+        <div class="container">
+          <div class="directions">
+            <h2 class="title title--2">Популярные направления в Казань</h2>
+
+            <div class="row">
+              <div class="col-xl-4 col-md-6">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4 col-md-6 mt-2 mt-md-0">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+              <div class="col-xl-4 col-md-6 mt-2 mt-xl-0">
+                <ul class="props">
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                  <li>
+                    <span> Санкт-Петербург </span>
+                    <span> 657 руб., 1 день </span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Популярные направления в Казань -->
+
+      <!-- Форма -->
+      <section class="section">
+        <div class="container container--ph-full">
+          <div class="end">
+            <div class="form form-end">
+              <div class="title title--2 form-end__title">
+                Заполните форму и получите бесплатный расчет
+              </div>
+              <div class="form-end__subtitle title title--5">
+                Менеджеры свяжутся с Вами в ближайшее время
+              </div>
+              <div class="form-end__container">
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="from"
+                    class="form-control"
+                    placeholder="Откуда"
+                  />
+
+                  <input
+                    type="text"
+                    name="to"
+                    class="form-control"
+                    placeholder="Куда"
+                  />
+                </div>
+                <div class="form-group">
+                  <input
+                    type="text"
+                    name="weight"
+                    class="form-control"
+                    placeholder="Имя"
+                  />
+                  <input
+                    type="text"
+                    name="tel"
+                    class="form-control"
+                    placeholder="Номер телефона"
+                  />
+                </div>
+                <button class="button">Отправить</button>
+                <div class="form-text">
+                  Отправляя форму вы соглашаетесь с нашей
+                  <a href="">Политикой конфиденциальности</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- /Форма -->
+    </main>
+
+    <!-- Футер -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4 col-xl-3">
+            <div class="footer-left footer-left--main">
+              <div class="footer-logo logo">
+                <a href="/">
+                  <img src="./images/logo.svg" alt="Логистический Центр" />
+                </a>
+              </div>
+              <a href="">Политика конфиденциальности</a>
+              <span
+                >Все права защищены 2024 ©<br />
+                ТК Логистический Центр</span
+              >
+              <a href="">Разработка сайта - WPNEW</a>
+            </div>
+          </div>
+
+          <div class="col-md-8 col-xl-6">
+            <div class="footer-center">
+              <div class="footer-menu">
+                <div class="footer-subtitle">Типы перевозок</div>
+                <ul>
+                  <li><a href="">Перевозка фурами</a></li>
+                  <li><a href="">Перевозка газелями</a></li>
+                  <li><a href="">Рефрижераторная перевозка</a></li>
+                  <li><a href="">Малотоннажные перевозки</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Негабаритная перевозка</a></li>
+                  <li><a href="">ЖД перевозки</a></li>
+                  <li><a href="">Перевозка опасных грузов</a></li>
+                  <li><a href="">Коники (перевозка труб/леса)</a></li>
+                </ul>
+              </div>
+
+              <div class="footer-menu">
+                <div class="footer-subtitle">
+                  Грузоперевозки​ по России и СНГ
+                </div>
+                <ul>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                </ul>
+                <ul>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                  <li><a href="">Москва-Казань</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3">
+            <div class="footer-right">
+              <div class="footer-info">
+                <div class="footer-subtitle">Контакты</div>
+
+                <a href="tel:+7(123)456-78-90" class="footer-tel">
+                  +7 (123) 456-78-90
+                </a>
+                <a href="mailto:logi.center@yandex.ru" class="footer-email"
+                  >logi.center@yandex.ru</a
+                >
+              </div>
+
+              <div class="footer-info">
+                <small class="footer-info-title">Адрес:</small>
+                <p class="footer-info-text">
+                  429950, Чувашская Республика, г. Новочебоксарск,
+                  ул. Винокурова, д. 10, оф.219 ИНН 2124045505 ОГРН
+                  1182130010370
+                </p>
+              </div>
+
+              <div class="footer-info">
+                <small class="footer-info-title">График работы:</small>
+                <p class="footer-info-text">
+                  Пн-Пт 08:00 — 17:00 <br />
+                  Сб-Вс 10:00 — 14:00
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 d-lg-none">
+            <div class="footer-left">
+              <a href="">Политика конфиденциальности</a>
+              <span
+                >Все права защищены 2024 ©<br />
+                ТК Логистический Центр</span
+              >
+              <a href="">Разработка сайта - WPNEW</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- /Футер -->
+
+    <!-- Модальные окна -->
+    <div
+      class="modal fade"
+      id="modal-callback"
+      tabindex="-1"
+      aria-labelledby="modal-callback-label"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal-callback-label">Modal title</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">...</div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /Модальные окна -->
+  </body>
+</html>
