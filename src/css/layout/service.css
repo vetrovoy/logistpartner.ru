@@ -399,3 +399,36 @@
     }
   }
 }
+
+.directions-card .card-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.directions-slider .swiper-slide {
+  height: 100%;
+}
+
+.directions-slider {
+  & .swiper-slide {
+    width: 226px;
+
+    /* @media (max-width: 560px) {
+      width: 156px;
+    } */
+  }
+}
+
+.directions-card .card-image {
+  margin-bottom: 18px;
+}
+
+.directions-card .card-badge {
+  margin-bottom: 25px;
+}
+
+.directions-card .card-body > .card-button {
+  width: 100%;
+  text-align: center;
+}

@@ -101,4 +101,15 @@ const bandsSlider = new Swiper(".brands-slider .swiper", {
   },
 });
 
-console.log(bandsSlider);
+
+const directionsSlider = new Swiper(".directions-slider .swiper", {
+  rewind: true,
+  slidesPerView: "auto",
+  spaceBetween: 20,
+  grabCursor: true,
+  breakpoints: {
+    1230: {
+      slidesPerView: 5,
+    },
+  },
+});
