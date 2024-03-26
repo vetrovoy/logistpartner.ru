@@ -25,7 +25,7 @@ const htmlPluginEntries = templateFiles.map(
       hash: false,
       filename: template.output,
       template: path.resolve(config.paths.source, template.input),
-      minify: false
+      minify: false,
     })
 );
 
@@ -70,7 +70,19 @@ module.exports = {
       },
       {
         test: /\.html$/i,
-        loader: "html-loader",
+        use: [
+          "html-loader",
+          {
+            loader: "posthtml-loader",
+            options: {
+              plugins: [
+                require("posthtml-include")({
+                  root: path.resolve(__dirname, "src"),
+                }),
+              ],
+            },
+          },
+        ],
       },
     ],
   },

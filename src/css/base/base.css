@@ -21,3 +21,63 @@ main {
   padding-top: 10px;
   background: $color-white;
 }
+
+.icon {
+  will-change: opacity;
+  backface-visibility: hidden;
+  transition: transform 0.2s ease-in-out, opacity 0.3s ease;
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.modal-content {
+  border-radius: 20px;
+  border: 1px solid #32312d;
+  background-color: #32312d;
+}
+
+.modal-header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
+  border-bottom: none;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.modal-header .btn-close {
+  margin: 0;
+  position: absolute;
+  right: -30px;
+  top: -30px;
+  opacity: 1;
+}
+
+.modal .modal-title {
+  color: $color-white;
+  margin: 0;
+}
+
+.modal-body {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
+
+.modal-footer {
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  border-top: none;
+  border-bottom-right-radius: 0;
+  border-bottom-left-radius: 0;
+}

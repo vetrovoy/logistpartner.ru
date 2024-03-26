@@ -24,6 +24,8 @@
     "postcss-nested": "^6.0.1",
     "postcss-preset-env": "^9.1.4",
     "postcss-simple-vars": "^7.0.1",
+    "posthtml-include": "^2.0.1",
+    "posthtml-loader": "^2.0.1",
     "terser-webpack-plugin": "^5.3.9",
     "webpack": "^5.75.0",
     "webpack-bundle-analyzer": "^4.5.0",

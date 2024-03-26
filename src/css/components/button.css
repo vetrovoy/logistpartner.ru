@@ -1,6 +1,9 @@
 .button,
 .btn {
-  display: inline-block;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
   font-family: Inter;
   cursor: pointer;
   color: $color-white;
@@ -83,5 +86,10 @@
       border-color: $color-white;
       box-shadow: none;
     }
+  }
+
+  &--bordered {
+    background-color: $color-white;
+    color: $color-accent;
   }
 }

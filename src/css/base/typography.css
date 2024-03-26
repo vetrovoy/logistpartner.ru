@@ -8,7 +8,8 @@ h2,
 h3,
 h4,
 h5,
-.title {
+.title,
+.modal-title {
   color: $color-primary;
   display: block;
   line-height: 130%;
@@ -19,7 +20,8 @@ h5,
 .title--2,
 .title--1,
 h1,
-h2 {
+h2,
+.modal-title {
   font-size: 38px;
   font-weight: 700;
 
@@ -110,7 +112,7 @@ a,
     color: rgb(221, 59, 26);
   }
 
-  &.button:hover {
+  &.button:not(.button--white):hover {
     color: $color-white;
   }
 
